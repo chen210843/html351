@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maejo University</title>
+    <link href="photo/mju2.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- button -->
+   <style>
+    #myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color: #188118;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 4px;
+}
+
+#myBtn:hover {
+background-color: rgb(59, 58, 58);
+}
+
+  </style>
+  </head>
+<body>
+      
+  <header>
+    <div class="green lighten-1">
+
+      <nav
+        class="w3-sidebar w3-black w3-animate-top w3-xxlarge"
+        style="display: none; padding-top: 150px"
+        id="mySidebar"
+      >
+        <a
+          href="javascript:void(0)"
+          onclick="w3_close()"
+          class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright"
+          style="padding: 6px 24px"
+        >
+          <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+          <a
+            href="index.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >หน้าหลัก</a
+          >
+          <a
+            href="เกี่ยวกับ.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >เกี่ยวกับเรา</a
+          >
+          <a
+            href="หน่วยงาน.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >หน่วยงาน</a
+          >
+          <a target="blank"
+            href="http://www.education.mju.ac.th/www/"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >การศึกษา</a
+          >
+          <a
+            href="วิจัยและบริการ.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >วิจัยและบริการ</a
+          >
+          <a
+            href="รอบรั้ว.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >รอบรั้วมหาวิทยาลัย</a
+          >
+        </div>
+      </nav>
+
+      <!--!PAGE CONTENT! -->
+      <div class="w3-content" style="max-width: 1500px">
+        <!-- Header -->
+        <div class="w3-opacity">
+          <span
+            class="w3-button w3-xxlarge w3-white w3-right"
+            onclick="w3_open()"
+            ><i class="fa fa-bars"></i
+          ></span>
+          <div class="w3-clear"></div>
+
+          <script>
+            // Toggle grid padding
+            function myFunction() {
+              var x = document.getElementById("myGrid");
+              if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+              } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+              }
+            }
+
+            // Open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "100%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+          </script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center">
+          <div class="col l2 m12 s12">
+            <a href="index.html"
+              ><img src="photo/mju.png" width="150" align="center"
+            /></a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col l4 m12 s12">
+            <a href="index.html">
+               
+              <h1 class="black-text"> Maejo University</h1></a>
+              <h3>มหาวิทยาลัยแม่โจ้ </h3>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+   <section>
+    <div class="container">
+      <h3>วิจัยและบริการ</h3>
+      <hr>
+    <div class="row">
+      <h2>แม่โจ้กับการสนองงานพระราชดำริ</h2>
+      <div class="col s12 m6 l3">
+         <img src="photo/Research11.png" width="200">
+      </div>      
+          <div class="card-content">
+            <p>ในการเสด็จพระราชดำเนินไปทรง เยี่ยมพื้นที่ต่างๆ ของ จังหวัดภาคเหนือ ได้ทรงทอดพระเนตร เห็นชาวเขามีวิถี การดำรงชีพที่ยึดถือปฏิบัติสืบต่อกันมา อย่างไม่เปลี่ยนแปลงนับพันปี....</p>
+          </div>
+        
+      </div>
+      <div class="row">
+      <h2>ฐานการเรียนรู้</h2>
+      <div class="col s12 m6 l3">
+        <img src="photo/Research17.png" width="200">
+        </div>    
+        
+          <div class="card-content">
+            <p>ให้บริการในการเยี่ยมชมฐานเรียนรู้ ทางด้านการเกษตร การวิจัย และการฝึกอบรมวิชาชีพ..</p>
+          </div>
+    </div>
+    <div class="row">
+      <h2>งานวิจัย</h2>
+      <div class="col s12 m6 l3">
+         <img src="photo/Research12.png" width="200">
+      </div>      
+          <div class="card-content">
+            <p>งานด้านการบริหารงานวิจัย และบริหารโครงการวิจัย ที่ได้รับการสนับสนุนงบประมาณ จากแหล่งทุนทั้งงบประมาณ แผ่นดิน  งบประมาณเงินรายได้ และงบประมาณ จากแหล่งทุนภายนอก</p>
+          </div>
+        </div>
+        <div class="row">
+          <h2>หลักสูตรอบรม</h2>
+          <div class="col s12 m6 l3">
+             <img src="photo/Research18.jpg" width="200">
+          </div>      
+              <div class="card-content">
+                <p>มหาวิทยาลัยแม่โจ้ มีการจัดฝึกอบรม ตลอดทั้งปี โดยมีหลักสูตรที่ หลากหลาย สำหรับนักศึกษา บุคลากร และบุคคลทั่วไป..</p>
+              </div>
+            </div>
+            <div class="row">
+              <h2>ที่พักอาคารธรรมศักดิ์มนตรี</h2>
+              <div class="col s12 m6 l3">
+                 <img src="photo/Research13.png" width="200">
+              </div>      
+                  <div class="card-content">
+                    <p>ฝ่ายนวัตกรรมและถ่ายทอดเทคโนโลยี สำนักวิจัยฯ ให้บริการห้องประชุม ห้องพักในราคาเป็นกันเอง</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <h2>การเข้าศึกษาดูงาน</h2>
+                  <div class="col s12 m6 l3">
+                     <img src="photo/Research_19.png" width="200">
+                  </div>      
+                      <div class="card-content">
+                        <p>ผู้สนใจติดต่อเข้าศึกษาดูงาน สามารถสอบถาม ฐานการเรียนรู้ ที่ตรงตามความต้องการของท่านได้ที่ งานประชาสัมพันธ์ โทรศัพท์ 053873046-7  และเพื่อความสะดวก โปรดประสานงานล่วงหน้า ก่อนเข้าศึกษาดูงานประมาณ 2 สัปดาห์</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h2>ที่พักศูนย์การศึกษาและฝึกอบรมนานาชาติ</h2>
+                      <div class="col s12 m6 l3">
+                         <img src="photo/Research14.png" width="200">
+                      </div>     
+                          <div class="card-content">
+                            <p>ให้บริการห้องประชุม ห้องพักในราคาเป็นกันเอง</p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <h2>วารสารวิจัยและส่งเสริมวิชา การการเกษตร</h2>
+                          <div class="col s12 m6 l3">
+                             <img src="photo/Research20.png" width="200">
+                          </div>      
+                              <div class="card-content">
+                                <p>กองบรรณาธิการ การเตรียมต้นฉบับ การเขียนเอกสารอ้างอิง</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <h2>สำนักวิจัยและส่งเสริมวิชาการ การเกษตร</h2>
+                              <div class="col s12 m6 l3">
+                                 <img src="photo/rae15.png" width="200">
+                              </div>      
+                                  <div class="card-content">
+                                    <p>เป็นศูนย์กลางพัฒนาการวิจัย และถ่ายทอดเทคโนโลยี เพื่อผลักดันมหาวิทยาลัย สู่ระดับนานาชาติ : ห้องสมุดเกี่ยวกับสิ่งพิมพ์ และงานวิจัย</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <h2>ถอดรหัสนักวิจัย</h2>
+                                  <div class="col s12 m6 l3">
+                                     <img src="photo/research21.png" width="200">
+                                  </div>      
+                                      <div class="card-content">
+                                        <p> รวบรวมผลงานความสำเร็จ ของนักวิจัยที่ได้รับรางวัล ในสาขาต่างๆ ในงาน "แม่โจ้ 2552–2553 ปีแห่งคุณภาพและเกียรติประวัติ </p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <h2>ห้องสมุดงานวิจัย</h2>
+                                      <div class="col s12 m6 l3">
+                                         <img src="photo/bnlibrae16.png" width="200">
+                                      </div>      
+                                          <div class="card-content">
+                                            <p> เป็นแหล่งรวบรวมเอกสารสิ่งพิมพ ์ที่เกี่ยวข้องกับงานวิจัย ทั้งภายนอกและภายในมหาวิทยาลัย เพื่อให้บริการ ค้นคว้า และอ้างอิงแก่นักวิชาการ นักศึกษา ตลอดจนบุคคลทั่วไป </p>
+                                          </div>
+                                        </div> 
+                                            <div class="row">
+                                              <h2>วารสารแม่โจ้เทคโนโลยีสารสนเทศ และนวัตกรรม</h2>
+                                              <div class="col s12 m6 l3">
+                                                 <img src="photo/MITIJ22.png" width="200">
+                                              </div>      
+                                                  <div class="card-content">
+                                                    <p>Maejo Information Technology and Innovation Journal (MITIJ) Maejo University </p>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <h2>วารสารแม่โจ้ปริทัศน์</h2>
+                                                  <div class="col s12 m6 l3">
+                                                     <img src="photo/wpparitat16.png" width="200">
+                                                  </div>      
+                                                      <div class="card-content">
+                                                        <p>บทความวิชาการ เพื่อเผยแพร่องค์ความรู้สู่สังคมไทย ความหลากหลาย ทางวิชาการด้านเทคโนโลยี ทางการเกษตร วิทยาศาสตร์ อุตสาหกรรม วิศวกรรม สิ่งแวดล้อม การบริหาร การจัดการ เศรษฐศาสตร์ ศิลปะ สังคม และวัฒนธรรม </p>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <h2>วารสารทางวิทยาศาสตร์ เทคโนโลยีฉบับนานาชาติ</h2>
+                                                      <div class="col s12 m6 l3">
+                                                         <img src="photo/wpbanner23.png" width="200">
+                                                      </div>      
+                                                          <div class="card-content">
+                                                            <p>Maejo International Journal of Science and Technology
+                                                              "MIJST"</p>
+                                                          </div>
+                                                        </div><hr>
+
+</section>
+
+<!-- button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <i class="material-icons">navigation</i>
+</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    
+<footer class="page-footer grey">
+  <div class="container">
+    <div class="row">
+      <div class="col l5 s12">
+        <h5 class="black-text">เกี่ยวกับเรา</h5>
+        <p class="black-text">
+          มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+          โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU
+          Map แผนที่มหาวิทยาลัย
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="black-text">ติดต่อเรา</h5>
+        <a href="https://www.facebook.com/MaejoUniversity">
+          <img src="photo/Facebook .png" width="50"
+        /></a>
+        <a href="http://line.me/ti/p/@maejouniversity"
+          ><img src="photo/LINE.png" width="50"
+        /></a>
+
+        <a href="https://www.youtube.com/user/mjuchannelhd">
+          <img src="photo/youtube.png" width="50" height="50"
+        /></a>
+        <a href="https://www.instagram.com/maejouniversity/"
+          ><img src="photo/ig.png" width="50" height="50"
+        /></a>
+        <a href=" https://green.mju.ac.th/"
+          ><img src="photo/mjugc.png" width="50" height="50"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <a class="grey-text text-lighten-4 right" href="#!">
+        © Maejo University. All Rights Reserved.</a
+      >
+    </div>
+  </div>
+</footer> 
+    </body>
+</html>

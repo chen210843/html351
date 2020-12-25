@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maejo University</title>
+    <link href="photo/mju.png" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- button -->
+   <style>
+    #myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+font-size: 18px;
+border: none;
+outline: none;
+background-color: #188118;
+color: white;
+cursor: pointer;
+padding: 15px;
+border-radius: 4px;
+}
+
+#myBtn:hover {
+background-color: rgb(59, 58, 58);
+}
+
+  </style>
+  </head>
+<body>
+      
+  <header>
+    <div class="green lighten-1">
+     
+      <nav
+        class="w3-sidebar w3-black w3-animate-top w3-xxlarge"
+        style="display: none; padding-top: 150px"
+        id="mySidebar"
+      >
+        <a
+          href="javascript:void(0)"
+          onclick="w3_close()"
+          class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright"
+          style="padding: 6px 24px"
+        >
+          <i class="fa fa-remove"></i>
+        </a>
+        <div class="w3-bar-block w3-center">
+          <a
+            href="index.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >หน้าหลัก</a
+          >
+          <a
+            href="เกี่ยวกับ.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >เกี่ยวกับเรา</a
+          >
+          <a
+            href="หน่วยงาน.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >หน่วยงาน</a
+          >
+          <a  target="blank"
+            href="http://www.education.mju.ac.th/www/"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >การศึกษา</a
+          >
+          <a
+            href="วิจัยและบริการ.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >วิจัยและบริการ</a
+          >
+          <a
+            href="รอบรั้ว.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+            >รอบรั้วมหาวิทยาลัย</a
+          >
+        </div>
+      </nav>
+
+      <!--!PAGE CONTENT! -->
+      <div class="w3-content" style="max-width: 1500px">
+        <!-- Header -->
+        <div class="w3-opacity">
+          <span
+            class="w3-button w3-xxlarge w3-white w3-right"
+            onclick="w3_open()"
+            ><i class="fa fa-bars"></i
+          ></span>
+          <div class="w3-clear"></div>
+
+          <script>
+            // Toggle grid padding
+            function myFunction() {
+              var x = document.getElementById("myGrid");
+              if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+              } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+              }
+            }
+
+            // Open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "100%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+          </script>
+        </div>
+      </div>
+      <div class="row">
+        <div class="center">
+          <div class="col l2 m12 s12">
+            <a href="index.html"
+              ><img src="photo/mju.png" width="150" align="center"
+            /></a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col l4 m12 s12">
+            <a href="index.html">
+               <h1 class="black-text"> Maejo University</h1></a>
+              <h3>มหาวิทยาลัยแม่โจ้ </h3>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header> 
+  <section>
+  <div class="container">
+      <div class="col s6 l4">
+          <div class="card-panel teal">
+            <div class="card-content">
+              <p>สำนักงานสภามหาวิทยาลัย</p>
+            </div>
+            </div>
+            <div class="card-panel teal">
+                <div class="card-content">
+                  <p>สำนักงานมหาวิทยาลัย</p>
+                </div>
+            </div>
+          </div> 
+  
+      <div class="row">
+          <div class="col l4 m4 s12">
+      <ul class="collection">
+         <li class="collection-item avatar">
+          <i class="medium material-icons">insert_chart</i>
+          <spen class="title"></span>
+            <p>กองกลาง</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+      </div>
+      <div class="col l4 m4 s12">
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <i class="medium material-icons">recent_actors</i>
+            <span class="title"></span>
+            <p>กองการเจ้าหน้าที่</p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+        </div>
+    
+        <div class="col l4 m4 s12">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="medium material-icons">iso</i>
+        <span class="title"></span>
+        <p>กองคลัง</p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+    </div>
+      </div>
+      <div class="row">
+        <div class="col l4 m4 s12">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="medium material-icons">folder_shared</i>
+        <span class="title"></span>
+        <p>กองตรวจสอบภายใน</p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+    </div>
+    <div class="col l4 m4 s12">
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <i class="medium material-icons">devices</i>
+          <span class="title"></span>
+          <p>กองเทคโนโลยีดิจิทัล</p>
+          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+      </div>
+  
+      <div class="col l4 m4 s12">
+  <ul class="collection">
+    <li class="collection-item avatar">
+     <i class="medium material-icons">child_friendly</i>
+      <span class="title"></span>
+      <p>กองบริหารงานทรัพย์สินและกิจการพิเศษ</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </div>
+    </div><div class="row">
+      <div class="col l4 m4 s12">
+  <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="medium material-icons">chrome_reader_mode</i>
+      <span class="title"></span>
+      <p>กองแผนงาน</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </div>
+  <div class="col l4 m4 s12">
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="medium material-icons">card_membership</i>
+        <span class="title"></span>
+        <p>กองพัฒนาคุณภาพ</p>
+        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+      </li>
+    </div>
+
+    <div class="col l4 m4 s12">
+<ul class="collection">
+  <li class="collection-item avatar">
+    <i class="medium material-icons">account_balance</i>
+    <span class="title"> </span>
+    <p>กองพัฒนานักศึกษา</p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</div>
+  </div><div class="row">
+    <div class="col l4 m4 s12">
+<ul class="collection">
+  <li class="collection-item avatar">
+    <i class="medium material-icons">contact_phone</i>
+    <span class="title"></span>
+    <p>กองวิเทศสัมพันธ์</p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</div>
+<div class="col l4 m4 s12">
+  <ul class="collection">
+    <li class="collection-item avatar">
+      <i class="medium material-icons">photo_album</i>
+      <span class="title"></span>
+      <p>กองส่งเสริมศิลปวัฒนธรรม</p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </div>
+
+  <div class="col l4 m4 s12">
+<ul class="collection">
+<li class="collection-item avatar">
+  <i class="medium material-icons">perm_media</i>
+  <span class="title"></span>
+  <p>กองกายภาพและสิ่งแวดล้อม</p>
+  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+</li>
+</div>
+</div><div class="row">
+  <div class="col l4 m4 s12">
+<ul class="collection">
+<li class="collection-item avatar">
+  <i class="medium material-icons">perm_contact_calendar</i>
+  <span class="title"></span>
+  <p>สภาพนักงาน</p>
+  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+</li>
+</div>
+<div class="col l4 m4 s12">
+<ul class="collection">
+  <li class="collection-item avatar">
+    <i class="medium material-icons">perm_phone_msg</i>
+    <span class="title"></span>
+    <p>ฝ่ายสื่อสารองค์กร</p>
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</div>
+
+<div class="col l4 m4 s12">
+<ul class="collection">
+<li class="collection-item avatar">
+  <i class="medium material-icons">recent_actors</i>
+<span class="title"></span>
+<p>ฝ่ายพัฒนาทรัพยากรมนุษย์</p>
+<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+</li>
+</div>
+</div>
+<div class="row">
+  <div class="col l4 m4 s12">
+<ul class="collection">
+<li class="collection-item avatar">
+  <i class="medium material-icons">rate_review</i>
+  <span class="title"></span>
+  <p>ฝ่ายกฏหมาย</p>
+  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+</li>
+</div>
+<div class="col l4 m4 s12">
+<ul class="collection">
+  <li class="collection-item avatar">
+    <i class="medium material-icons"></i>
+    <span class="title"></span>
+    
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+  </li>
+</div>
+
+<div class="col l4 m4 s12">
+<ul class="collection">
+<li class="collection-item avatar">
+  <i class="medium material-icons"></i>
+<span class="title"></span>
+
+<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+</li>
+</div>
+</div>
+   </div>
+          <div class="container">
+                  <div class="col s12 l4">
+                    <div class="card-panel teal">
+                        <div class="card-content">
+                          <p>คณะ</p>
+                        </div>
+                        </div>
+                     </div>
+                    <div class="row">
+                      <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">description</i>
+                      <span class="title"></span>
+                      <p>คณะบริหารธุรกิจ
+                        </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                      <li class="collection-item avatar">
+                        <i class="medium material-icons">colorize</i>
+                        <span class="title"></span>
+                        <p>คณะวิทยาศาสตร์
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      </li>
+                    </div>
+                    
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">pool</i>
+                    <span class="title"></span>
+                    <p>คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    </div><div class="row">
+                      <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">redeem</i>
+                      <span class="title"></span>
+                      <p>คณะศิลปศาสตร์
+                        </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                      <li class="collection-item avatar">
+                        <i class="medium material-icons">store_mall_directory</i>
+                        <span class="title"></span>
+                        <p>คณะสถาปัตยกรรมศาสตร์ และการออกแบบสิ่งแวดล้อม
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      </li>
+                    </div>
+                    
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">streetview</i>
+                    <span class="title"></span>
+                    <p>คณะสารสนเทศและการสื่อสาร
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    </div><div class="row">
+                      <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">rv_hookup</i>
+                      <span class="title"></span>
+                      <p>คณะผลิตกรรมการเกษตร
+                        </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                      <li class="collection-item avatar">
+                        <i class="medium material-icons">perm_data_setting</i>
+                        <span class="title"></span>
+                        <p>คณะวิศวกรรมและอุตสาหกรรมเกษตร
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      </li>
+                    </div>
+                    
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">panorama</i>
+                    <span class="title"></span>
+                    <p>คณะพัฒนาการท่องเที่ยว
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    </div><div class="row">
+                      <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">more</i>
+                      <span class="title"></span>
+                      <p>คณะเศรษฐศาสตร์
+                        </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                      <li class="collection-item avatar">
+                        <i class="medium material-icons">bug_report</i>
+                        <span class="title"></span>
+                        <p>คณะสัตวศาสตร์และเทคโนโลยี
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      </li>
+                    </div>
+                    
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">business</i>
+                    <span class="title"></span>
+                    <p>	
+                      มหาวิทยาลัยแม่โจ้-แพร่ เฉลิมพระเกียรติ
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons">art_track</i>
+                      <span class="title"></span>
+                      <p>	มหาวิทยาลัยแม่โจ้-ชุมพร
+                        </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                      <li class="collection-item avatar">
+                        <i class="medium material-icons"></i>
+                        <span class="title"></span>
+                        <p>
+                        </p>
+                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                      </li>
+                    </div>
+                    
+                    <div class="col l4 m4 s12">
+                    <ul class="collection">
+                    <li class="collection-item avatar">
+                      <i class="medium material-icons"></i>
+                    <span class="title"></span>
+                    <p>	
+                    </p>
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    </div>
+                    </div>
+                 </div>   
+              </div>              
+             
+                             
+     <!-- วิทยาลัย -->
+<div class="container">
+                             <div class="col s12 l12">
+                                  <div class="card-panel teal">
+                                    <div class="card-content">
+                                      <p>วิทยาลัย</p>
+                                    </div>
+                                    </div>
+                             </div>
+                                    <div class="row">
+                                      <div class="col l4 m4 s12">
+                                    <ul class="collection">
+                                    <li class="collection-item avatar">
+                                      <i class="medium material-icons">domain</i>
+                                      <span class="title"></span>
+                                      <p>	วิทยาลัยนานาชาติ
+                                        </p>
+                                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    </div>
+                                    <div class="col l4 m4 s12">
+                                    <ul class="collection">
+                                      <li class="collection-item avatar">
+                                        <i class="medium material-icons">directions_boat</i>
+                                        <span class="title"></span>
+                                        <p>วิทยาลัยพลังงานทดแทน
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                      </li>
+                                    </div>
+                                    
+                                    <div class="col l4 m4 s12">
+                                    <ul class="collection">
+                                    <li class="collection-item avatar">
+                                      <i class="medium material-icons">featured_play_list</i>
+                                    <span class="title"></span>
+                                    <p>	วิทยาลัยบริหารศาสตร์
+                                    </p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    </div>
+                                    </div>                                
+</div>                             
+             <!-- สำนัก                -->
+<div class="container">             
+                               <div class="col s12 l12">
+                                 <div class="card-panel teal">
+                                      <div class="card-content">
+                                        <p>สำนัก</p>
+                                      </div>
+                                      </div>
+                               </div>
+                               <div class="row">
+                                <div class="col l4 m4 s12">
+                              <ul class="collection">
+                              <li class="collection-item avatar">
+                                <i class="medium material-icons">layers</i>
+                                <span class="title"></span>
+                                <p>	สำนักวิจัยและส่งเสริมวิชาการการเกษตร
+                                  </p>
+                                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                              </li>
+                              </div>
+                              <div class="col l4 m4 s12">
+                              <ul class="collection">
+                                <li class="collection-item avatar">
+                                  <i class="medium material-icons">art_track</i>
+                                  <span class="title"></span>
+                                  <p>สำนักหอสมุด
+                                  </p>
+                                  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                </li>
+                              </div>
+                              
+                              <div class="col l4 m4 s12">
+                              <ul class="collection">
+                              <li class="collection-item avatar">
+                                <i class="medium material-icons">account_balance</i>
+                              <span class="title"></span>
+                              <p>	สำนักบริหารและพัฒนาวิชาการ
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                              </li>
+                              </div>
+                              </div>
+ </div>
+
+ 
+<!-- หน่วยงานวิสาหกิจ -->
+        <div class="container">                   
+                             <div class="col s12 l12">
+                                 <div class="card-panel teal">
+                                          <div class="card-content">
+                                            <p>หน่วยงานวิสาหกิจ</p>
+                                          </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          <div class="col l4 m4 s12">
+                                        <ul class="collection">
+                                        <li class="collection-item avatar">
+                                          <i class="medium material-icons">camera_roll</i>
+                                          <span class="title"></span>
+                                          <p>ศูนย์วิจัยและพัฒนาเกษตรธรรมชาติ
+                                            </p>
+                                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                        </li>
+                                        </div>
+                                        <div class="col l4 m4 s12">
+                                        <ul class="collection">
+                                          <li class="collection-item avatar">
+                                            <i class="medium material-icons">collections</i>
+                                            <span class="title"></span>
+                                            <p>ฟาร์มมหาวิทยาลัย
+                                            </p>
+                                            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                          </li>
+                                        </div>
+                                        
+                                        <div class="col l4 m4 s12">
+                                        <ul class="collection">
+                                        <li class="collection-item avatar">
+                                          <i class="medium material-icons">developer_board</i>
+                                        <span class="title"></span>
+                                        <p>	สถาบันบริการตรวจสอบคุณภาพและมาตรฐานผลิตภัณฑ์
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                        </li>
+                                        </div>
+                                        </div>
+                                      
+                                      <div class="row">
+                                    <div class="col l4 m4 s12">
+                                      <ul class="collection">
+                                      <li class="collection-item avatar">
+                                        <i class="medium material-icons">event_seat</i>
+                                        <span class="title"></span>
+                                        <p>สถาบันรับรองระบบการผลิตผลิตภัณฑ์การเกษตร
+                                          </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                      </li>
+                                      </div>
+                                      <div class="col l4 m4 s12">
+                                      <ul class="collection">
+                                        <li class="collection-item avatar">
+                                          <i class="medium material-icons">filter_hdr</i>
+                                          <span class="title"></span>
+                                          <p>อุทยานวิทยาศาสตร์เทคโนโลยีเกษตรและอาหาร
+                                            (สถาบันบ่มเพาะวิสาหกิจ)
+                                          </p>
+                                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                        </li>
+                                      </div>
+                                       
+                                      <div class="col l4 m4 s12">
+                                      <ul class="collection">
+                                      <li class="collection-item avatar">
+                                        <i class="medium material-icons"></i>
+                                      <span class="title"></span>
+                                      <p>
+                                      </p>
+                                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                      </li>
+                                      </div>
+                                      </div>
+</div>
+
+<!-- หน่วยงานอื่นๆ -->
+<div class="container">
+                                        <div class="col s12 l12">
+                                          <div class="card-panel teal">
+                                              <div class="card-content">
+                                                <p>หน่วยงานอื่นๆ</p>
+                                              </div>
+                                              </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col l4 m4 s12">
+                                      <ul class="collection">
+                                      <li class="collection-item avatar">
+                                        <i class="medium material-icons">theaters</i>
+                                        <span class="title"></span>
+                                        <p>หอพักนักศึกษา
+                                          </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                      </li>
+                                      </div>
+                                      <div class="col l4 m4 s12">
+                                      <ul class="collection">
+                                        <li class="collection-item avatar">
+                                          <i class="medium material-icons">timeline</i>
+                                          <span class="title"></span>
+                                          <p>โครงการอนุรักษ์พันธุกรรมพืช อันเนื่องมาจากพระราชดำริฯ
+                                          </p>
+                                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                        </li>
+                                      </div>
+                                       
+                                      <div class="col l4 m4 s12">
+                                      <ul class="collection">
+                                      <li class="collection-item avatar">
+                                        <i class="medium material-icons">store</i>
+                                      <span class="title"></span>
+                                      <p>	
+                                        สหกรณ์ออมทรัพย์มหาวิทยาลัยแม่โจ้
+                                      </p>
+                                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                      </li>
+                                      </div>
+                                      </div>
+                                    <div class="row">
+                                      <div class="col l4 m4 s12">
+                                    <ul class="collection">
+                                    <li class="collection-item avatar">
+                                      <i class="medium material-icons">speaker_group</i>
+                                      <span class="title"></span>
+                                      <p>สโมสรบุคลากรมหาวิทยาลัยแม่โจ้
+                                        </p>
+                                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    </div>
+                                    <div class="col l4 m4 s12">
+                                    <ul class="collection">
+                                      <li class="collection-item avatar">
+                                        <i class="medium material-icons"></i>
+                                        <span class="title"></span>
+                                        <p>
+                                        </p>
+                                        <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                      </li>
+                                    </div>
+                                     
+                                    <div class="col l4 m4 s12">
+                                    <ul class="collection">
+                                    <li class="collection-item avatar">
+                                      <i class="medium material-icons"></i>
+                                    <span class="title"></span>
+                                    <p>
+                                    </p>
+                                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                                    </li>
+                                    </div>
+                                  </div>
+                                 
+ </div>                                       
+</section>
+ <!-- button -->
+ <button onclick="topFunction()" id="myBtn" title="Go to top">
+  <i class="material-icons">navigation</i>
+</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "block";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+</script>
+    
+<footer class="page-footer grey">
+  <div class="container">
+    <div class="row">
+      <div class="col l5 s12">
+        <h5 class="black-text">เกี่ยวกับเรา</h5>
+        <p class="black-text">
+          มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+          โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th | MJU
+          Map แผนที่มหาวิทยาลัย
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="black-text">ติดต่อเรา</h5>
+        <a href="https://www.facebook.com/MaejoUniversity">
+          <img src="photo/Facebook .png" width="50"
+        /></a>
+        <a href="http://line.me/ti/p/@maejouniversity"
+          ><img src="photo/LINE.png" width="50"
+        /></a>
+
+        <a href="https://www.youtube.com/user/mjuchannelhd">
+          <img src="photo/youtube.png" width="50" height="50"
+        /></a>
+        <a href="https://www.instagram.com/maejouniversity/"
+          ><img src="photo/ig.png" width="50" height="50"
+        /></a>
+        <a href=" https://green.mju.ac.th/"
+          ><img src="photo/mjugc.png" width="50" height="50"
+        /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <a class="grey-text text-lighten-4 right" href="#!">
+        © Maejo University. All Rights Reserved.</a
+      >
+    </div>
+  </div>
+</footer>
+    </body>
+</html>
